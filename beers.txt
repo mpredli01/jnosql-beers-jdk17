@@ -1,0 +1,394 @@
+[INFO] Scanning for projects...
+[WARNING] The POM for org.eclipse.m2e-only:lifecycle-mapping:jar:1.0.0 is missing, no dependency information available
+[WARNING] Failed to retrieve plugin descriptor for org.eclipse.m2e-only:lifecycle-mapping:1.0.0: Plugin org.eclipse.m2e-only:lifecycle-mapping:1.0.0 or one of its dependencies could not be resolved: org.eclipse.m2e-only:lifecycle-mapping:jar:1.0.0 was not found in https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced
+[INFO] 
+[INFO] -------------------------< org.redlich:beers >--------------------------
+[INFO] Building Example Application using Jakarta NoSQL and MongoDB 1.0.5
+[INFO] --------------------------------[ jar ]---------------------------------
+[WARNING] The POM for org.eclipse.m2e-only:lifecycle-mapping:jar:1.0.0 is missing, no dependency information available
+[WARNING] Failed to retrieve plugin descriptor for org.eclipse.m2e-only:lifecycle-mapping:1.0.0: Plugin org.eclipse.m2e-only:lifecycle-mapping:1.0.0 or one of its dependencies could not be resolved: org.eclipse.m2e-only:lifecycle-mapping:jar:1.0.0 was not found in https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced
+[INFO] 
+[INFO] >>> exec-maven-plugin:1.2.1:java (default-cli) > validate @ beers >>>
+[INFO] 
+[INFO] <<< exec-maven-plugin:1.2.1:java (default-cli) < validate @ beers <<<
+[INFO] 
+[INFO] 
+[INFO] --- exec-maven-plugin:1.2.1:java (default-cli) @ beers ---
+18:06:44.858 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider
+18:06:44.870 [org.redlich.beers.BeerApp.main()] INFO org.jboss.weld.Version - WELD-000900: 3.1.9 (Final)
+18:06:45.111 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-ENV-000030: Cannot load class using the ResourceLoader: org.jboss.jandex.Index
+18:06:45.153 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.environment.deployment.discovery.DefaultBeanArchiveScanner - Resolved bean archive reference: /usr/local/apps/jakartaee-apps/jnosql-beers/target/classes for URL: file:/usr/local/apps/jakartaee-apps/jnosql-beers/target/classes/META-INF/beans.xml
+18:06:45.158 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.environment.deployment.discovery.DefaultBeanArchiveScanner - Resolved bean archive reference: /Users/mpredli01/.m2/repository/org/eclipse/jnosql/mapping/jnosql-mapping-document/1.0.0-b5/jnosql-mapping-document-1.0.0-b5.jar for URL: jar:file:/Users/mpredli01/.m2/repository/org/eclipse/jnosql/mapping/jnosql-mapping-document/1.0.0-b5/jnosql-mapping-document-1.0.0-b5.jar!/META-INF/beans.xml
+18:06:45.161 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.environment.deployment.discovery.DefaultBeanArchiveScanner - Resolved bean archive reference: /Users/mpredli01/.m2/repository/org/eclipse/jnosql/mapping/jnosql-mapping-core/1.0.0-b5/jnosql-mapping-core-1.0.0-b5.jar for URL: jar:file:/Users/mpredli01/.m2/repository/org/eclipse/jnosql/mapping/jnosql-mapping-core/1.0.0-b5/jnosql-mapping-core-1.0.0-b5.jar!/META-INF/beans.xml
+18:06:45.162 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-ENV-000032: Processing bean archive reference: /usr/local/apps/jakartaee-apps/jnosql-beers/target/classes
+18:06:45.162 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle path: /usr/local/apps/jakartaee-apps/jnosql-beers/target/classes
+18:06:45.163 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: /usr/local/apps/jakartaee-apps/jnosql-beers/target/classes
+18:06:45.163 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: /usr/local/apps/jakartaee-apps/jnosql-beers/target/classes/org
+18:06:45.163 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: /usr/local/apps/jakartaee-apps/jnosql-beers/target/classes/org/redlich
+18:06:45.163 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: /usr/local/apps/jakartaee-apps/jnosql-beers/target/classes/org/redlich/beers
+18:06:45.164 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: /usr/local/apps/jakartaee-apps/jnosql-beers/target/classes/META-INF
+18:06:45.164 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-ENV-000039: Bean archive reference /usr/local/apps/jakartaee-apps/jnosql-beers/target/classes handled by org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler@c71720b
+18:06:45.165 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-ENV-000032: Processing bean archive reference: /Users/mpredli01/.m2/repository/org/eclipse/jnosql/mapping/jnosql-mapping-document/1.0.0-b5/jnosql-mapping-document-1.0.0-b5.jar
+18:06:45.165 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle path: /Users/mpredli01/.m2/repository/org/eclipse/jnosql/mapping/jnosql-mapping-document/1.0.0-b5/jnosql-mapping-document-1.0.0-b5.jar
+18:06:45.165 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle archive file: /Users/mpredli01/.m2/repository/org/eclipse/jnosql/mapping/jnosql-mapping-document/1.0.0-b5/jnosql-mapping-document-1.0.0-b5.jar
+18:06:45.166 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-ENV-000039: Bean archive reference /Users/mpredli01/.m2/repository/org/eclipse/jnosql/mapping/jnosql-mapping-document/1.0.0-b5/jnosql-mapping-document-1.0.0-b5.jar handled by org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler@c71720b
+18:06:45.166 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-ENV-000032: Processing bean archive reference: /Users/mpredli01/.m2/repository/org/eclipse/jnosql/mapping/jnosql-mapping-core/1.0.0-b5/jnosql-mapping-core-1.0.0-b5.jar
+18:06:45.166 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle path: /Users/mpredli01/.m2/repository/org/eclipse/jnosql/mapping/jnosql-mapping-core/1.0.0-b5/jnosql-mapping-core-1.0.0-b5.jar
+18:06:45.166 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle archive file: /Users/mpredli01/.m2/repository/org/eclipse/jnosql/mapping/jnosql-mapping-core/1.0.0-b5/jnosql-mapping-core-1.0.0-b5.jar
+18:06:45.167 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-ENV-000039: Bean archive reference /Users/mpredli01/.m2/repository/org/eclipse/jnosql/mapping/jnosql-mapping-core/1.0.0-b5/jnosql-mapping-core-1.0.0-b5.jar handled by org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler@c71720b
+18:06:45.169 [org.redlich.beers.BeerApp.main()] INFO org.jboss.weld.Bootstrap - WELD-ENV-000014: Falling back to Java Reflection for bean-discovery-mode="annotated" discovery. Add org.jboss:jandex to the classpath to speed-up startup.
+18:06:45.225 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-ENV-000024: Archive isolation enabled - creating multiple isolated bean archives if needed
+18:06:45.241 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.BootstrapTracker - START bootstrap 
+18:06:45.241 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.BootstrapTracker - START bootstrap > startContainer 
+18:06:45.248 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Configuration - WELD-001902: Following configuration was detected and applied: {org.jboss.weld.executor.threadPoolType=COMMON, org.jboss.weld.construction.relaxed=true, org.jboss.weld.bootstrap.allowOptimizedCleanup=true}
+18:06:45.250 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.BootstrapTracker - START bootstrap > startContainer > initServices 
+18:06:45.275 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - Using Weld modules: []
+18:06:45.303 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - Using instantiator: org.jboss.weld.bean.proxy.UnsafeProxyInstantiator
+18:06:45.324 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.BootstrapTracker -   END bootstrap > startContainer > initServices (74 ms)
+18:06:45.325 [org.redlich.beers.BeerApp.main()] INFO org.jboss.weld.Bootstrap - WELD-000101: Transactional services not available. Injection of @Inject UserTransaction not available. Transactional observers will be invoked synchronously.
+18:06:45.349 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.BootstrapTracker - START bootstrap > startContainer > builtinContexts 
+18:06:45.403 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%deployment%ApplicationContext
+18:06:45.407 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Reflection - WELD-000601: interface javax.inject.Singleton is missing @Target. Weld will use this annotation, however this may make the application unportable.
+18:06:45.408 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%deployment%SingletonContext
+18:06:45.410 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%deployment%BoundSessionContext
+18:06:45.411 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%deployment%BoundConversationContext
+18:06:45.412 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%deployment%BoundRequestContext
+18:06:45.412 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%deployment%RequestContext
+18:06:45.413 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%deployment%DependentContext
+18:06:45.413 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.BootstrapTracker -   END bootstrap > startContainer > builtinContexts (63 ms)
+18:06:45.414 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.BootstrapTracker - START bootstrap > startContainer > readDeploymentStructure 
+18:06:45.451 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Built-in Bean [javax.enterprise.inject.spi.BeanManager] with qualifiers [@Default]
+18:06:45.452 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Built-in Bean [org.jboss.weld.manager.BeanManagerImpl] with qualifiers [@Default]
+18:06:45.453 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Built-in Bean [javax.enterprise.inject.spi.BeanManager] with qualifiers [@Default]
+18:06:45.453 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Built-in Bean [org.jboss.weld.manager.BeanManagerImpl] with qualifiers [@Default]
+18:06:45.454 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Built-in Bean [javax.enterprise.inject.spi.BeanManager] with qualifiers [@Default]
+18:06:45.454 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Built-in Bean [org.jboss.weld.manager.BeanManagerImpl] with qualifiers [@Default]
+18:06:45.454 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.BootstrapTracker -   END bootstrap > startContainer > readDeploymentStructure (40 ms)
+18:06:45.455 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.BootstrapTracker -   END bootstrap > startContainer (214 ms)
+18:06:45.459 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.BootstrapTracker - START bootstrap > startInitialization 
+18:06:45.492 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Extension [class org.eclipse.jnosql.mapping.reflection.EntityMetadataExtension] with qualifiers [@Default]; jar:file:/Users/mpredli01/.m2/repository/org/eclipse/jnosql/mapping/jnosql-mapping-core/1.0.0-b5/jnosql-mapping-core-1.0.0-b5.jar!/META-INF/services/javax.enterprise.inject.spi.Extension@16[EntityMetadataExtension{classConverter=org.eclipse.jnosql.mapping.reflection.ClassConverter@2c1ff0f0, mappings-size=0, classes={}}]
+18:06:45.493 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000168: Extension bean deployed: Extension [class org.eclipse.jnosql.mapping.reflection.EntityMetadataExtension] with qualifiers [@Default]; jar:file:/Users/mpredli01/.m2/repository/org/eclipse/jnosql/mapping/jnosql-mapping-core/1.0.0-b5/jnosql-mapping-core-1.0.0-b5.jar!/META-INF/services/javax.enterprise.inject.spi.Extension@16[EntityMetadataExtension{classConverter=org.eclipse.jnosql.mapping.reflection.ClassConverter@2c1ff0f0, mappings-size=0, classes={}}]
+18:06:45.494 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Built-in Bean [javax.enterprise.inject.spi.BeanManager] with qualifiers [@Default]
+18:06:45.494 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Built-in Bean [org.jboss.weld.manager.BeanManagerImpl] with qualifiers [@Default]
+18:06:45.497 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Extension [class org.jboss.weld.environment.se.WeldSEBeanRegistrant] with qualifiers [@Default]; jar:file:/Users/mpredli01/.m2/repository/org/jboss/weld/se/weld-se-core/3.1.9.Final/weld-se-core-3.1.9.Final.jar!/META-INF/services/javax.enterprise.inject.spi.Extension@1[org.jboss.weld.environment.se.WeldSEBeanRegistrant@70445065]
+18:06:45.497 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000168: Extension bean deployed: Extension [class org.jboss.weld.environment.se.WeldSEBeanRegistrant] with qualifiers [@Default]; jar:file:/Users/mpredli01/.m2/repository/org/jboss/weld/se/weld-se-core/3.1.9.Final/weld-se-core-3.1.9.Final.jar!/META-INF/services/javax.enterprise.inject.spi.Extension@1[org.jboss.weld.environment.se.WeldSEBeanRegistrant@70445065]
+18:06:45.506 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Extension [class io.smallrye.config.inject.ConfigExtension] with qualifiers [@Default]; jar:file:/Users/mpredli01/.m2/repository/io/smallrye/config/smallrye-config/2.12.1/smallrye-config-2.12.1.jar!/META-INF/services/javax.enterprise.inject.spi.Extension@1[io.smallrye.config.inject.ConfigExtension@6f973e0c]
+18:06:45.507 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000168: Extension bean deployed: Extension [class io.smallrye.config.inject.ConfigExtension] with qualifiers [@Default]; jar:file:/Users/mpredli01/.m2/repository/io/smallrye/config/smallrye-config/2.12.1/smallrye-config-2.12.1.jar!/META-INF/services/javax.enterprise.inject.spi.Extension@1[io.smallrye.config.inject.ConfigExtension@6f973e0c]
+18:06:45.508 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Extension [class org.jboss.weld.bootstrap.WeldExtension] with qualifiers [@Default]; n/a
+18:06:45.508 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000168: Extension bean deployed: Extension [class org.jboss.weld.bootstrap.WeldExtension] with qualifiers [@Default]; n/a
+18:06:45.511 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Extension [class org.eclipse.jnosql.mapping.document.spi.DocumentExtension] with qualifiers [@Default]; jar:file:/Users/mpredli01/.m2/repository/org/eclipse/jnosql/mapping/jnosql-mapping-document/1.0.0-b5/jnosql-mapping-document-1.0.0-b5.jar!/META-INF/services/javax.enterprise.inject.spi.Extension@15[org.eclipse.jnosql.mapping.document.spi.DocumentExtension@5bdb91af]
+18:06:45.511 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000168: Extension bean deployed: Extension [class org.eclipse.jnosql.mapping.document.spi.DocumentExtension] with qualifiers [@Default]; jar:file:/Users/mpredli01/.m2/repository/org/eclipse/jnosql/mapping/jnosql-mapping-document/1.0.0-b5/jnosql-mapping-document-1.0.0-b5.jar!/META-INF/services/javax.enterprise.inject.spi.Extension@15[org.eclipse.jnosql.mapping.document.spi.DocumentExtension@5bdb91af]
+18:06:45.512 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Built-in Bean [javax.enterprise.inject.spi.BeanManager] with qualifiers [@Default]
+18:06:45.512 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Built-in Bean [org.jboss.weld.manager.BeanManagerImpl] with qualifiers [@Default]
+18:06:45.512 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.BootstrapTracker - START bootstrap > startInitialization > BeforeBeanDiscovery 
+18:06:46.605 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000162: BeforeBeanDiscovery.addAnnotatedType() called by io.smallrye.config.inject.ConfigExtension@6f973e0c for [BackedAnnotatedType] public @ApplicationScoped class io.smallrye.config.inject.ConfigProducer
+18:06:46.614 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000171: BeforeBeanDiscovery.configureQualifier() called by io.smallrye.config.inject.ConfigExtension@6f973e0c for interface org.eclipse.microprofile.config.inject.ConfigProperties
+18:06:46.623 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000162: BeforeBeanDiscovery.addAnnotatedType() called by org.jboss.weld.bootstrap.WeldExtension@3416af6a for [BackedAnnotatedType] public @Vetoed @Interceptor @ActivateRequestContext @Priority class org.jboss.weld.contexts.activator.ActivateRequestContextInterceptor
+18:06:46.626 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000162: BeforeBeanDiscovery.addAnnotatedType() called by org.jboss.weld.bootstrap.WeldExtension@3416af6a for [BackedAnnotatedType] public @Vetoed @Interceptor @ActivateRequestContext @Priority class org.jboss.weld.contexts.activator.CdiRequestContextActivatorInterceptor
+18:06:46.628 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000162: BeforeBeanDiscovery.addAnnotatedType() called by org.jboss.weld.environment.se.WeldSEBeanRegistrant@70445065 for [BackedAnnotatedType] public @Vetoed @ApplicationScoped class org.jboss.weld.environment.se.beans.ParametersFactory
+18:06:46.631 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000162: BeforeBeanDiscovery.addAnnotatedType() called by org.jboss.weld.environment.se.WeldSEBeanRegistrant@70445065 for [BackedAnnotatedType] public @Decorator class org.jboss.weld.environment.se.threading.RunnableDecorator
+18:06:46.634 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000162: BeforeBeanDiscovery.addAnnotatedType() called by org.jboss.weld.environment.se.WeldSEBeanRegistrant@70445065 for [BackedAnnotatedType] public @Vetoed @Interceptor @ActivateThreadScope @Priority class org.jboss.weld.environment.se.contexts.activators.ActivateThreadScopeInterceptor
+18:06:46.641 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.BootstrapTracker -   END bootstrap > startInitialization > BeforeBeanDiscovery (1129 ms)
+18:06:46.689 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.BootstrapTracker - START bootstrap > startInitialization > AfterTypeDiscovery 
+18:06:46.690 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.BootstrapTracker -   END bootstrap > startInitialization > AfterTypeDiscovery (0 ms)
+18:06:46.698 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000103: Enabled alternatives for Weld BeanManager for /Users/mpredli01/.m2/repository/org/eclipse/jnosql/mapping/jnosql-mapping-core/1.0.0-b5/jnosql-mapping-core-1.0.0-b5.jar [bean count=3]: (empty collection)
+18:06:46.698 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000104: Enabled decorator types for Weld BeanManager for /Users/mpredli01/.m2/repository/org/eclipse/jnosql/mapping/jnosql-mapping-core/1.0.0-b5/jnosql-mapping-core-1.0.0-b5.jar [bean count=3]: (empty collection)
+18:06:46.698 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000105: Enabled interceptor types for Weld BeanManager for /Users/mpredli01/.m2/repository/org/eclipse/jnosql/mapping/jnosql-mapping-core/1.0.0-b5/jnosql-mapping-core-1.0.0-b5.jar [bean count=3]: 
+  - class org.jboss.weld.contexts.activator.ActivateRequestContextInterceptor,
+  - class org.jboss.weld.contexts.activator.CdiRequestContextActivatorInterceptor,
+  - class org.jboss.weld.environment.se.contexts.activators.ActivateThreadScopeInterceptor
+18:06:46.699 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000103: Enabled alternatives for Weld BeanManager for org.jboss.weld.environment.deployment.WeldDeployment.additionalClasses [bean count=5]: (empty collection)
+18:06:46.699 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000104: Enabled decorator types for Weld BeanManager for org.jboss.weld.environment.deployment.WeldDeployment.additionalClasses [bean count=5]: (empty collection)
+18:06:46.699 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000105: Enabled interceptor types for Weld BeanManager for org.jboss.weld.environment.deployment.WeldDeployment.additionalClasses [bean count=5]: 
+  - class org.jboss.weld.contexts.activator.ActivateRequestContextInterceptor,
+  - class org.jboss.weld.contexts.activator.CdiRequestContextActivatorInterceptor,
+  - class org.jboss.weld.environment.se.contexts.activators.ActivateThreadScopeInterceptor
+18:06:46.699 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000103: Enabled alternatives for Weld BeanManager for /usr/local/apps/jakartaee-apps/jnosql-beers/target/classes [bean count=2]: (empty collection)
+18:06:46.699 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000104: Enabled decorator types for Weld BeanManager for /usr/local/apps/jakartaee-apps/jnosql-beers/target/classes [bean count=2]: (empty collection)
+18:06:46.699 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000105: Enabled interceptor types for Weld BeanManager for /usr/local/apps/jakartaee-apps/jnosql-beers/target/classes [bean count=2]: 
+  - class org.jboss.weld.contexts.activator.ActivateRequestContextInterceptor,
+  - class org.jboss.weld.contexts.activator.CdiRequestContextActivatorInterceptor,
+  - class org.jboss.weld.environment.se.contexts.activators.ActivateThreadScopeInterceptor
+18:06:46.699 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000103: Enabled alternatives for Weld BeanManager for /Users/mpredli01/.m2/repository/org/eclipse/jnosql/mapping/jnosql-mapping-document/1.0.0-b5/jnosql-mapping-document-1.0.0-b5.jar [bean count=3]: (empty collection)
+18:06:46.699 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000104: Enabled decorator types for Weld BeanManager for /Users/mpredli01/.m2/repository/org/eclipse/jnosql/mapping/jnosql-mapping-document/1.0.0-b5/jnosql-mapping-document-1.0.0-b5.jar [bean count=3]: (empty collection)
+18:06:46.699 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000105: Enabled interceptor types for Weld BeanManager for /Users/mpredli01/.m2/repository/org/eclipse/jnosql/mapping/jnosql-mapping-document/1.0.0-b5/jnosql-mapping-document-1.0.0-b5.jar [bean count=3]: 
+  - class org.jboss.weld.contexts.activator.ActivateRequestContextInterceptor,
+  - class org.jboss.weld.contexts.activator.CdiRequestContextActivatorInterceptor,
+  - class org.jboss.weld.environment.se.contexts.activators.ActivateThreadScopeInterceptor
+18:06:46.699 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.BootstrapTracker -   END bootstrap > startInitialization (1240 ms)
+18:06:46.700 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.BootstrapTracker - START bootstrap > deployBeans 
+18:06:46.708 [ForkJoinPool.commonPool-worker-6] INFO org.jboss.weld.Bootstrap - WELD-001125: Illegal bean type java.util.function.Function<java.lang.reflect.Constructor<?>, org.eclipse.jnosql.mapping.reflection.InstanceSupplier> ignored on [EnhancedAnnotatedTypeImpl] @ApplicationScoped class org.eclipse.jnosql.mapping.reflection.ReflectionInstanceSupplierFactory
+18:06:46.733 [ForkJoinPool.commonPool-worker-3] WARN org.jboss.weld.Bootstrap - WELD-000167: Class org.redlich.beers.BeerRepository is annotated with @ApplicationScoped but it does not declare an appropriate constructor therefore is not registered as a bean!
+18:06:46.733 [ForkJoinPool.commonPool-worker-2] WARN org.jboss.weld.Bootstrap - WELD-000167: Class org.redlich.beers.BrewerRepository is annotated with @ApplicationScoped but it does not declare an appropriate constructor therefore is not registered as a bean!
+18:06:46.768 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000108: Decorator: Decorator [class org.jboss.weld.environment.se.threading.RunnableDecorator] decorates [Runnable] with delegate type [Runnable] and delegate qualifiers [@Default]
+18:06:46.768 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000107: Interceptor: Interceptor [class org.jboss.weld.contexts.activator.CdiRequestContextActivatorInterceptor intercepts @ActivateRequestContext]
+18:06:46.768 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000107: Interceptor: Interceptor [class org.jboss.weld.contexts.activator.ActivateRequestContextInterceptor intercepts @ActivateRequestContext]
+18:06:46.768 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000107: Interceptor: Interceptor [class org.jboss.weld.environment.se.contexts.activators.ActivateThreadScopeInterceptor intercepts @ActivateThreadScope]
+18:06:46.769 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Implicit Bean [javax.enterprise.inject.spi.Bean] with qualifiers [@Default]
+18:06:46.769 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%/Users/mpredli01/.m2/repository/org/eclipse/jnosql/mapping/jnosql-mapping-core/1.0.0-b5/jnosql-mapping-core-1.0.0-b5.jar%DependentContext
+18:06:46.769 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Implicit Bean [javax.enterprise.event.Event] with qualifiers [@Default]
+18:06:46.769 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%/Users/mpredli01/.m2/repository/org/eclipse/jnosql/mapping/jnosql-mapping-core/1.0.0-b5/jnosql-mapping-core-1.0.0-b5.jar%BoundRequestContext
+18:06:46.770 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Implicit Bean [javax.enterprise.inject.spi.Bean] with qualifiers [@Intercepted]
+18:06:46.770 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Implicit Bean [javax.enterprise.inject.spi.InterceptionFactory] with qualifiers [@Default]
+18:06:46.770 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Managed Bean [class org.eclipse.jnosql.mapping.reflection.ReflectionFieldWriterFactory] with qualifiers [@Any @Default]
+18:06:46.770 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%/Users/mpredli01/.m2/repository/org/eclipse/jnosql/mapping/jnosql-mapping-core/1.0.0-b5/jnosql-mapping-core-1.0.0-b5.jar%ApplicationContext
+18:06:46.770 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Managed Bean [class org.eclipse.jnosql.mapping.reflection.DefaultInstanceProducer] with qualifiers [@Any @Default]
+18:06:46.770 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Managed Bean [class org.eclipse.jnosql.mapping.reflection.ReflectionFieldReaderFactory] with qualifiers [@Any @Default]
+18:06:46.770 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Managed Bean [class org.eclipse.jnosql.mapping.reflection.DefaultReflections] with qualifiers [@Any @Default]
+18:06:46.770 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Implicit Bean [javax.enterprise.inject.spi.Interceptor] with qualifiers [@Default]
+18:06:46.770 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%/Users/mpredli01/.m2/repository/org/eclipse/jnosql/mapping/jnosql-mapping-core/1.0.0-b5/jnosql-mapping-core-1.0.0-b5.jar%RequestContext
+18:06:46.770 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Managed Bean [class org.eclipse.jnosql.mapping.DefaultConverters] with qualifiers [@Any @Default]
+18:06:46.770 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Implicit Bean [javax.enterprise.inject.spi.Bean] with qualifiers [@Decorated]
+18:06:46.770 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Implicit Bean [javax.enterprise.inject.spi.InjectionPoint] with qualifiers [@Default]
+18:06:46.771 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%/Users/mpredli01/.m2/repository/org/eclipse/jnosql/mapping/jnosql-mapping-core/1.0.0-b5/jnosql-mapping-core-1.0.0-b5.jar%Conversation
+18:06:46.771 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Managed Bean [class org.eclipse.jnosql.mapping.reflection.DefaultEntitiesMetadata] with qualifiers [@Any @Default]
+18:06:46.771 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%/Users/mpredli01/.m2/repository/org/eclipse/jnosql/mapping/jnosql-mapping-core/1.0.0-b5/jnosql-mapping-core-1.0.0-b5.jar%SingletonContext
+18:06:46.771 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%/Users/mpredli01/.m2/repository/org/eclipse/jnosql/mapping/jnosql-mapping-core/1.0.0-b5/jnosql-mapping-core-1.0.0-b5.jar%BoundConversationContext
+18:06:46.771 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%/Users/mpredli01/.m2/repository/org/eclipse/jnosql/mapping/jnosql-mapping-core/1.0.0-b5/jnosql-mapping-core-1.0.0-b5.jar%BoundSessionContext
+18:06:46.771 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%/Users/mpredli01/.m2/repository/org/eclipse/jnosql/mapping/jnosql-mapping-core/1.0.0-b5/jnosql-mapping-core-1.0.0-b5.jar%RequestContextController
+18:06:46.771 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Managed Bean [class org.eclipse.jnosql.mapping.reflection.ClassConverter] with qualifiers [@Any @Default]
+18:06:46.771 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Implicit Bean [javax.enterprise.inject.spi.EventMetadata] with qualifiers [@Default]
+18:06:46.771 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Implicit Bean [javax.enterprise.inject.Instance] with qualifiers [@Default]
+18:06:46.771 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Managed Bean [class org.eclipse.jnosql.mapping.reflection.ReflectionInstanceSupplierFactory] with qualifiers [@Any @Default]
+18:06:46.771 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Implicit Bean [javax.enterprise.inject.spi.Decorator] with qualifiers [@Default]
+18:06:46.772 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%org.jboss.weld.environment.deployment.WeldDeployment.additionalClasses%DependentContext
+18:06:46.772 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Implicit Bean [javax.enterprise.inject.spi.Bean] with qualifiers [@Decorated]
+18:06:46.772 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%org.jboss.weld.environment.deployment.WeldDeployment.additionalClasses%BoundConversationContext
+18:06:46.772 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Implicit Bean [javax.enterprise.inject.spi.Bean] with qualifiers [@Intercepted]
+18:06:46.772 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Implicit Bean [javax.enterprise.inject.spi.Bean] with qualifiers [@Default]
+18:06:46.773 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Producer Method [Set<T>] with qualifiers [@Any @ConfigProperty] declared as [[UnbackedAnnotatedMethod] @Dependent @Produces @ConfigProperty protected io.smallrye.config.inject.ConfigProducer.producesSetConfigProperty(InjectionPoint)]
+18:06:46.773 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%org.jboss.weld.environment.deployment.WeldDeployment.additionalClasses%BoundSessionContext
+18:06:46.773 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%org.jboss.weld.environment.deployment.WeldDeployment.additionalClasses%ApplicationContext
+18:06:46.773 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Implicit Bean [javax.enterprise.inject.spi.Decorator] with qualifiers [@Default]
+18:06:46.773 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%org.jboss.weld.environment.deployment.WeldDeployment.additionalClasses%RequestContext
+18:06:46.773 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Producer Method [List<String>] with qualifiers [@Parameters @Any] declared as [[UnbackedAnnotatedMethod] @Produces @Parameters public org.jboss.weld.environment.se.beans.ParametersFactory.getArgs()]
+18:06:46.773 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Implicit Bean [javax.enterprise.event.Event] with qualifiers [@Default]
+18:06:46.774 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Producer Method [String[]] with qualifiers [@Parameters @Any] declared as [[UnbackedAnnotatedMethod] @Produces @Parameters public org.jboss.weld.environment.se.beans.ParametersFactory.getArgsAsArray()]
+18:06:46.774 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Implicit Bean [javax.enterprise.inject.spi.InjectionPoint] with qualifiers [@Default]
+18:06:46.774 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Implicit Bean [javax.enterprise.inject.spi.InterceptionFactory] with qualifiers [@Default]
+18:06:46.774 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Producer Method [Double] with qualifiers [@Any @ConfigProperty] declared as [[UnbackedAnnotatedMethod] @Dependent @Produces @ConfigProperty protected io.smallrye.config.inject.ConfigProducer.produceDoubleConfigProperty(InjectionPoint)]
+18:06:46.774 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Producer Method [Character] with qualifiers [@Any @ConfigProperty] declared as [[UnbackedAnnotatedMethod] @Dependent @Produces @ConfigProperty protected io.smallrye.config.inject.ConfigProducer.produceCharacterConfigProperty(InjectionPoint)]
+18:06:46.774 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%org.jboss.weld.environment.deployment.WeldDeployment.additionalClasses%Conversation
+18:06:46.774 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Producer Method [ConfigValue] with qualifiers [@Any @ConfigProperty] declared as [[UnbackedAnnotatedMethod] @Dependent @Produces @ConfigProperty protected io.smallrye.config.inject.ConfigProducer.produceConfigValue(InjectionPoint)]
+18:06:46.774 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%org.jboss.weld.environment.deployment.WeldDeployment.additionalClasses%RequestContextController
+18:06:46.774 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Producer Method [Boolean] with qualifiers [@Any @ConfigProperty] declared as [[UnbackedAnnotatedMethod] @Dependent @Produces @ConfigProperty protected io.smallrye.config.inject.ConfigProducer.produceBooleanConfigProperty(InjectionPoint)]
+18:06:46.774 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Producer Method [Byte] with qualifiers [@Any @ConfigProperty] declared as [[UnbackedAnnotatedMethod] @Dependent @Produces @ConfigProperty protected io.smallrye.config.inject.ConfigProducer.produceByteConfigProperty(InjectionPoint)]
+18:06:46.774 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Producer Method [Integer] with qualifiers [@Any @ConfigProperty] declared as [[UnbackedAnnotatedMethod] @Dependent @Produces @ConfigProperty protected io.smallrye.config.inject.ConfigProducer.getIntegerValue(InjectionPoint)]
+18:06:46.774 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Implicit Bean [javax.enterprise.inject.spi.Interceptor] with qualifiers [@Default]
+18:06:46.775 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Managed Bean [class io.smallrye.config.inject.ConfigProducer] with qualifiers [@Any @Default]
+18:06:46.775 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Producer Method [Long] with qualifiers [@Any @ConfigProperty] declared as [[UnbackedAnnotatedMethod] @Dependent @Produces @ConfigProperty protected io.smallrye.config.inject.ConfigProducer.getLongValue(InjectionPoint)]
+18:06:46.775 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Implicit Bean [javax.enterprise.inject.Instance] with qualifiers [@Default]
+18:06:46.775 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Producer Method [SmallRyeConfig] with qualifiers [@Any @Default] declared as [[UnbackedAnnotatedMethod] @Produces protected io.smallrye.config.inject.ConfigProducer.getConfig()]
+18:06:46.775 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Producer Method [Supplier<T>] with qualifiers [@Any @ConfigProperty] declared as [[UnbackedAnnotatedMethod] @Dependent @Produces @ConfigProperty protected io.smallrye.config.inject.ConfigProducer.produceSupplierConfigProperty(InjectionPoint)]
+18:06:46.775 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Producer Method [String] with qualifiers [@Any @ConfigProperty] declared as [[UnbackedAnnotatedMethod] @Dependent @Produces @ConfigProperty protected io.smallrye.config.inject.ConfigProducer.produceStringConfigProperty(InjectionPoint)]
+18:06:46.775 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Producer Method [Map<K, V>] with qualifiers [@Any @ConfigProperty] declared as [[UnbackedAnnotatedMethod] @Dependent @Produces @ConfigProperty protected io.smallrye.config.inject.ConfigProducer.producesMapConfigProperty(InjectionPoint)]
+18:06:46.775 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Producer Method [List<T>] with qualifiers [@Any @ConfigProperty] declared as [[UnbackedAnnotatedMethod] @Dependent @Produces @ConfigProperty protected io.smallrye.config.inject.ConfigProducer.producesListConfigProperty(InjectionPoint)]
+18:06:46.775 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Producer Method [OptionalInt] with qualifiers [@Any @ConfigProperty] declared as [[UnbackedAnnotatedMethod] @Dependent @Produces @ConfigProperty protected io.smallrye.config.inject.ConfigProducer.produceOptionalIntConfigProperty(InjectionPoint)]
+18:06:46.775 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Implicit Bean [javax.enterprise.inject.spi.EventMetadata] with qualifiers [@Default]
+18:06:46.776 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Producer Method [OptionalDouble] with qualifiers [@Any @ConfigProperty] declared as [[UnbackedAnnotatedMethod] @Dependent @Produces @ConfigProperty protected io.smallrye.config.inject.ConfigProducer.produceOptionalDoubleConfigProperty(InjectionPoint)]
+18:06:46.776 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Producer Method [Short] with qualifiers [@Any @ConfigProperty] declared as [[UnbackedAnnotatedMethod] @Dependent @Produces @ConfigProperty protected io.smallrye.config.inject.ConfigProducer.produceShortConfigProperty(InjectionPoint)]
+18:06:46.776 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Producer Method [OptionalLong] with qualifiers [@Any @ConfigProperty] declared as [[UnbackedAnnotatedMethod] @Dependent @Produces @ConfigProperty protected io.smallrye.config.inject.ConfigProducer.produceOptionalLongConfigProperty(InjectionPoint)]
+18:06:46.776 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Managed Bean [class org.jboss.weld.environment.se.beans.ParametersFactory] with qualifiers [@Any @Default]
+18:06:46.776 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%org.jboss.weld.environment.deployment.WeldDeployment.additionalClasses%BoundRequestContext
+18:06:46.776 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Producer Method [Optional<T>] with qualifiers [@Any @ConfigProperty] declared as [[UnbackedAnnotatedMethod] @Dependent @Produces @ConfigProperty protected io.smallrye.config.inject.ConfigProducer.produceOptionalConfigProperty(InjectionPoint)]
+18:06:46.776 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Producer Method [Float] with qualifiers [@Any @ConfigProperty] declared as [[UnbackedAnnotatedMethod] @Dependent @Produces @ConfigProperty protected io.smallrye.config.inject.ConfigProducer.produceFloatConfigProperty(InjectionPoint)]
+18:06:46.776 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%org.jboss.weld.environment.deployment.WeldDeployment.additionalClasses%SingletonContext
+18:06:46.777 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%/usr/local/apps/jakartaee-apps/jnosql-beers/target/classes%ApplicationContext
+18:06:46.777 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Implicit Bean [javax.enterprise.inject.spi.EventMetadata] with qualifiers [@Default]
+18:06:46.777 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Managed Bean [class org.redlich.beers.BrewerService] with qualifiers [@Any @Default]
+18:06:46.777 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Implicit Bean [javax.enterprise.inject.spi.Bean] with qualifiers [@Intercepted]
+18:06:46.777 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%/usr/local/apps/jakartaee-apps/jnosql-beers/target/classes%BoundConversationContext
+18:06:46.777 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Managed Bean [class org.redlich.beers.Brewer] with qualifiers [@Any @Default]
+18:06:46.777 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%/usr/local/apps/jakartaee-apps/jnosql-beers/target/classes%BoundSessionContext
+18:06:46.777 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Managed Bean [class org.redlich.beers.BeerService] with qualifiers [@Any @Default]
+18:06:46.777 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Managed Bean [class org.redlich.beers.BeerApp] with qualifiers [@Any @Default]
+18:06:46.777 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Implicit Bean [javax.enterprise.inject.spi.Bean] with qualifiers [@Default]
+18:06:46.777 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Implicit Bean [javax.enterprise.inject.spi.Bean] with qualifiers [@Decorated]
+18:06:46.777 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Implicit Bean [javax.enterprise.inject.spi.Interceptor] with qualifiers [@Default]
+18:06:46.777 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Implicit Bean [javax.enterprise.inject.spi.InterceptionFactory] with qualifiers [@Default]
+18:06:46.777 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Managed Bean [class org.redlich.beers.Beer] with qualifiers [@Any @Default]
+18:06:46.777 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Implicit Bean [javax.enterprise.inject.spi.InjectionPoint] with qualifiers [@Default]
+18:06:46.778 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%/usr/local/apps/jakartaee-apps/jnosql-beers/target/classes%RequestContext
+18:06:46.778 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%/usr/local/apps/jakartaee-apps/jnosql-beers/target/classes%RequestContextController
+18:06:46.778 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%/usr/local/apps/jakartaee-apps/jnosql-beers/target/classes%BoundRequestContext
+18:06:46.778 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Implicit Bean [javax.enterprise.inject.Instance] with qualifiers [@Default]
+18:06:46.778 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Managed Bean [class org.redlich.beers.Beer$BeerBuilder] with qualifiers [@Any @Default]
+18:06:46.778 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%/usr/local/apps/jakartaee-apps/jnosql-beers/target/classes%DependentContext
+18:06:46.778 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Implicit Bean [javax.enterprise.event.Event] with qualifiers [@Default]
+18:06:46.778 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Managed Bean [class org.redlich.beers.Service] with qualifiers [@Any @Default]
+18:06:46.778 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Managed Bean [class org.redlich.beers.Brewer$BrewerBuilder] with qualifiers [@Any @Default]
+18:06:46.778 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%/usr/local/apps/jakartaee-apps/jnosql-beers/target/classes%SingletonContext
+18:06:46.778 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Implicit Bean [javax.enterprise.inject.spi.Decorator] with qualifiers [@Default]
+18:06:46.778 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%/usr/local/apps/jakartaee-apps/jnosql-beers/target/classes%Conversation
+18:06:46.779 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Managed Bean [class org.eclipse.jnosql.mapping.document.query.DefaultDocumentQueryMapper] with qualifiers [@Any @Default]
+18:06:46.779 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Implicit Bean [javax.enterprise.inject.spi.Bean] with qualifiers [@Default]
+18:06:46.779 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%/Users/mpredli01/.m2/repository/org/eclipse/jnosql/mapping/jnosql-mapping-document/1.0.0-b5/jnosql-mapping-document-1.0.0-b5.jar%BoundSessionContext
+18:06:46.779 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%/Users/mpredli01/.m2/repository/org/eclipse/jnosql/mapping/jnosql-mapping-document/1.0.0-b5/jnosql-mapping-document-1.0.0-b5.jar%DependentContext
+18:06:46.779 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%/Users/mpredli01/.m2/repository/org/eclipse/jnosql/mapping/jnosql-mapping-document/1.0.0-b5/jnosql-mapping-document-1.0.0-b5.jar%RequestContext
+18:06:46.780 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Implicit Bean [javax.enterprise.inject.spi.Interceptor] with qualifiers [@Default]
+18:06:46.780 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Implicit Bean [javax.enterprise.inject.spi.Bean] with qualifiers [@Decorated]
+18:06:46.780 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Producer Method [DocumentManager] with qualifiers [@Any @Default] declared as [[BackedAnnotatedMethod] @Produces @ApplicationScoped public org.eclipse.jnosql.mapping.document.configuration.DocumentManagerSupplier.get()]
+18:06:46.780 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Implicit Bean [javax.enterprise.inject.spi.Decorator] with qualifiers [@Default]
+18:06:46.780 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Implicit Bean [javax.enterprise.event.Event] with qualifiers [@Default]
+18:06:46.780 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%/Users/mpredli01/.m2/repository/org/eclipse/jnosql/mapping/jnosql-mapping-document/1.0.0-b5/jnosql-mapping-document-1.0.0-b5.jar%ApplicationContext
+18:06:46.780 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Managed Bean [class org.eclipse.jnosql.mapping.document.DefaultDocumentEventPersistManager] with qualifiers [@Any @Default]
+18:06:46.780 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Implicit Bean [javax.enterprise.inject.spi.Bean] with qualifiers [@Intercepted]
+18:06:46.780 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Implicit Bean [javax.enterprise.inject.spi.InterceptionFactory] with qualifiers [@Default]
+18:06:46.780 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%/Users/mpredli01/.m2/repository/org/eclipse/jnosql/mapping/jnosql-mapping-document/1.0.0-b5/jnosql-mapping-document-1.0.0-b5.jar%SingletonContext
+18:06:46.780 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%/Users/mpredli01/.m2/repository/org/eclipse/jnosql/mapping/jnosql-mapping-document/1.0.0-b5/jnosql-mapping-document-1.0.0-b5.jar%RequestContextController
+18:06:46.780 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Implicit Bean [javax.enterprise.inject.spi.EventMetadata] with qualifiers [@Default]
+18:06:46.780 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%/Users/mpredli01/.m2/repository/org/eclipse/jnosql/mapping/jnosql-mapping-document/1.0.0-b5/jnosql-mapping-document-1.0.0-b5.jar%Conversation
+18:06:46.780 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Managed Bean [class org.eclipse.jnosql.mapping.document.DefaultDocumentTemplate] with qualifiers [@Any @Default]
+18:06:46.780 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%/Users/mpredli01/.m2/repository/org/eclipse/jnosql/mapping/jnosql-mapping-document/1.0.0-b5/jnosql-mapping-document-1.0.0-b5.jar%BoundConversationContext
+18:06:46.780 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%/Users/mpredli01/.m2/repository/org/eclipse/jnosql/mapping/jnosql-mapping-document/1.0.0-b5/jnosql-mapping-document-1.0.0-b5.jar%BoundRequestContext
+18:06:46.781 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Managed Bean [class org.eclipse.jnosql.mapping.document.DefaultDocumentWorkflow] with qualifiers [@Any @Default]
+18:06:46.781 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Implicit Bean [javax.enterprise.inject.spi.InjectionPoint] with qualifiers [@Default]
+18:06:46.781 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Managed Bean [class org.eclipse.jnosql.mapping.document.configuration.DocumentManagerSupplier] with qualifiers [@Any @Default]
+18:06:46.781 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Managed Bean [class org.eclipse.jnosql.mapping.document.query.DefaultDocumentRepositoryProducer] with qualifiers [@Any @Default]
+18:06:46.781 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Implicit Bean [javax.enterprise.inject.Instance] with qualifiers [@Default]
+18:06:46.781 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Managed Bean [class org.eclipse.jnosql.mapping.document.DefaultDocumentTemplateProducer] with qualifiers [@Any @Default]
+18:06:46.781 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Managed Bean [class org.eclipse.jnosql.mapping.document.DefaultDocumentEntityConverter] with qualifiers [@Any @Default]
+18:06:46.781 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.BootstrapTracker - START bootstrap > deployBeans > AfterBeanDiscovery 
+18:06:46.785 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000156: AfterBeanDiscovery.addContext() called by org.jboss.weld.environment.se.WeldSEBeanRegistrant@70445065 for org.jboss.weld.environment.se.contexts.ThreadContext@1174a9dc
+18:06:46.792 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Reflection - WELD-000620: interface jakarta.nosql.mapping.Database is not declared @Target(METHOD, FIELD, PARAMETER, TYPE). Weld will use this annotation, however this may make the application unportable.
+18:06:46.792 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000154: AfterBeanDiscovery.addBean() called by org.eclipse.jnosql.mapping.document.spi.DocumentExtension@5bdb91af for org.eclipse.jnosql.mapping.document.query.RepositoryDocumentBean@b3d8ee2
+18:06:46.793 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000154: AfterBeanDiscovery.addBean() called by org.eclipse.jnosql.mapping.document.spi.DocumentExtension@5bdb91af for org.eclipse.jnosql.mapping.document.query.RepositoryDocumentBean@62bf6a9b
+18:06:46.796 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000154: AfterBeanDiscovery.addBean() called by org.jboss.weld.environment.se.WeldSEBeanRegistrant@70445065 for Configurator Bean [class org.jboss.weld.environment.se.WeldSEBeanRegistrant, types: WeldContainer, Object, qualifiers: @Any @Default]
+18:06:46.796 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Configurator Bean [class org.jboss.weld.environment.se.WeldSEBeanRegistrant, types: WeldContainer, Object, qualifiers: @Any @Default]
+18:06:46.796 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: org.eclipse.jnosql.mapping.document.query.RepositoryDocumentBean@b3d8ee2
+18:06:46.796 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: org.eclipse.jnosql.mapping.document.query.RepositoryDocumentBean@62bf6a9b
+18:06:46.796 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.BootstrapTracker -   END bootstrap > deployBeans > AfterBeanDiscovery (14 ms)
+18:06:46.854 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.BootstrapTracker -   END bootstrap > deployBeans (154 ms)
+18:06:46.854 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.Bootstrap - WELD-000100: Weld initialized. Validating beans
+18:06:46.854 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.BootstrapTracker - START bootstrap > validateBeans 
+18:06:46.866 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.BootstrapTracker - START bootstrap > validateBeans > AfterDeploymentValidation 
+18:06:46.911 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.BootstrapTracker -   END bootstrap > validateBeans > AfterDeploymentValidation (45 ms)
+18:06:46.912 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.BootstrapTracker -   END bootstrap > validateBeans (57 ms)
+18:06:46.912 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.BootstrapTracker - START bootstrap > endInitialization 
+18:06:46.914 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.BootstrapTracker -   END bootstrap > endInitialization (2 ms)
+18:06:46.915 [org.redlich.beers.BeerApp.main()] DEBUG org.jboss.weld.BootstrapTracker -   END bootstrap (1674 ms)
+18:06:46.919 [org.redlich.beers.BeerApp.main()] INFO org.jboss.weld.Bootstrap - WELD-ENV-002003: Weld SE container b4ed876f-0934-4021-8fb7-88afff215db3 initialized
+
+*-----------------------------------------------------------------------------*
+* Craft Beer Database Application                                             *
+* A demonstration on how to create a Jakarta NoSQL and MongoDB application    *
+*-----------------------------------------------------------------------------*
+
+18:06:47.161 [org.redlich.beers.BeerApp.main()] DEBUG org.mongodb.driver.cluster - Updating cluster description to  {type=UNKNOWN, servers=[{address=localhost:27017, type=UNKNOWN, state=CONNECTING}]
+18:06:47.180 [org.redlich.beers.BeerApp.main()] INFO org.mongodb.driver.client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync", "version": "4.7.2"}, "os": {"type": "Darwin", "name": "Mac OS X", "architecture": "x86_64", "version": "10.15.7"}, "platform": "Java/Oracle Corporation/17.0.2+8-LTS-86"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@75996631]}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=UNSPECIFIED, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+18:06:47.204 [org.redlich.beers.BeerApp.main()] INFO org.mongodb.driver.cluster - Cluster description not yet available. Waiting for 30000 ms before timing out
+18:06:47.236 [cluster-ClusterId{value='63b4b507fbdf041159ec902a', description='null'}-localhost:27017] INFO org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:13}] to localhost:27017
+18:06:47.235 [cluster-rtt-ClusterId{value='63b4b507fbdf041159ec902a', description='null'}-localhost:27017] INFO org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:12}] to localhost:27017
+18:06:47.236 [cluster-ClusterId{value='63b4b507fbdf041159ec902a', description='null'}-localhost:27017] INFO org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=21892783}
+18:06:47.238 [cluster-ClusterId{value='63b4b507fbdf041159ec902a', description='null'}-localhost:27017] DEBUG org.mongodb.driver.connection - Marking the connection pool for ServerId{clusterId=ClusterId{value='63b4b507fbdf041159ec902a', description='null'}, address=localhost:27017} as 'ready'
+18:06:47.239 [MaintenanceTimer-2-thread-1] DEBUG org.mongodb.driver.connection - Pruning pooled connections to localhost:27017
+18:06:47.241 [cluster-ClusterId{value='63b4b507fbdf041159ec902a', description='null'}-localhost:27017] DEBUG org.mongodb.driver.cluster - Updating cluster description to  {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=21.9 ms, state=CONNECTED}]
+18:06:47.262 [org.redlich.beers.BeerApp.main()] INFO org.mongodb.driver.connection - Opened connection [connectionId{localValue:3, serverValue:14}] to localhost:27017
+18:06:47.277 [org.redlich.beers.BeerApp.main()] DEBUG org.mongodb.driver.protocol.command - Sending command '{"find": "Beer", "filter": {}, "$db": "beersdb", "lsid": {"id": {"$binary": {"base64": "qcT7pBFNSbmtIclQ/hr6DQ==", "subType": "04"}}}}' with request id 7 to database beersdb on connection [connectionId{localValue:3, serverValue:14}] to server localhost:27017
+18:06:47.278 [org.redlich.beers.BeerApp.main()] DEBUG org.mongodb.driver.protocol.command - Execution of command with request id 7 completed successfully in 5.55 ms on connection [connectionId{localValue:3, serverValue:14}] to server localhost:27017
+18:06:47.285 [org.redlich.beers.BeerApp.main()] DEBUG org.mongodb.driver.operation - Received batch of 26 documents with cursorId 0 from server localhost:27017
+18:06:47.294 [org.redlich.beers.BeerApp.main()] DEBUG org.mongodb.driver.protocol.command - Sending command '{"find": "Brewer", "filter": {}, "$db": "beersdb", "lsid": {"id": {"$binary": {"base64": "qcT7pBFNSbmtIclQ/hr6DQ==", "subType": "04"}}}}' with request id 8 to database beersdb on connection [connectionId{localValue:3, serverValue:14}] to server localhost:27017
+18:06:47.294 [org.redlich.beers.BeerApp.main()] DEBUG org.mongodb.driver.protocol.command - Execution of command with request id 8 completed successfully in 1.82 ms on connection [connectionId{localValue:3, serverValue:14}] to server localhost:27017
+18:06:47.295 [org.redlich.beers.BeerApp.main()] DEBUG org.mongodb.driver.operation - Received batch of 30 documents with cursorId 0 from server localhost:27017
+* First, let's get some current statistics on the `Beer` and `Brewer` collections:
+There are 26 beers in the `Beer` collection of the database
+There are 30 brewers in the `Brewer` collection of the database
+
+* Let's find a specific brewer by name, say, Boulevard Brewing:
+18:06:47.416 [org.redlich.beers.BeerApp.main()] DEBUG org.mongodb.driver.protocol.command - Sending command '{"find": "Brewer", "filter": {"name": "Boulevard Brewing"}, "$db": "beersdb", "lsid": {"id": {"$binary": {"base64": "qcT7pBFNSbmtIclQ/hr6DQ==", "subType": "04"}}}}' with request id 9 to database beersdb on connection [connectionId{localValue:3, serverValue:14}] to server localhost:27017
+18:06:47.417 [org.redlich.beers.BeerApp.main()] DEBUG org.mongodb.driver.protocol.command - Execution of command with request id 9 completed successfully in 1.34 ms on connection [connectionId{localValue:3, serverValue:14}] to server localhost:27017
+18:06:47.417 [org.redlich.beers.BeerApp.main()] DEBUG org.mongodb.driver.operation - Received batch of 1 documents with cursorId 0 from server localhost:27017
+[Brewer { id = '30', name = 'Boulevard Brewing', city = 'Kansas City', state = 'Missouri' }
+]
+
+* Let's obtain the `brewerId` of Boulevard Brewing:
+The `brewerId` of Boulevard Brewing is 30
+
+* Let's add two new beers from Boulevard Brewing using its `brewerId` (30):
+
+* Let's find varieties of beer by Boulevard Brewing using its brewerId (30):
+18:06:47.429 [org.redlich.beers.BeerApp.main()] DEBUG org.mongodb.driver.protocol.command - Sending command '{"find": "Beer", "filter": {"brewer_id": 30}, "$db": "beersdb", "lsid": {"id": {"$binary": {"base64": "qcT7pBFNSbmtIclQ/hr6DQ==", "subType": "04"}}}}' with request id 10 to database beersdb on connection [connectionId{localValue:3, serverValue:14}] to server localhost:27017
+18:06:47.430 [org.redlich.beers.BeerApp.main()] DEBUG org.mongodb.driver.protocol.command - Execution of command with request id 10 completed successfully in 1.22 ms on connection [connectionId{localValue:3, serverValue:14}] to server localhost:27017
+18:06:47.430 [org.redlich.beers.BeerApp.main()] DEBUG org.mongodb.driver.operation - Received batch of 4 documents with cursorId 0 from server localhost:27017
+Beer { id = '23', name = 'Tank 7', type = 'ALE', brewer_id = '30', abv = '8.5' }
+
+Beer { id = '24', name = 'The Calling IPA', type = 'IPA', brewer_id = '30', abv = '8.5' }
+
+Beer { id = '25', name = 'Bourbon Barrel Quad', type = 'ALE', brewer_id = '30', abv = '12.2' }
+
+Beer { id = '26', name = 'Whiskey Barrel Stout', type = 'STOUT', brewer_id = '30', abv = '11.8' }
+
+
+* Let's find a specific beer by name, say, Pumking:
+18:06:47.440 [org.redlich.beers.BeerApp.main()] DEBUG org.mongodb.driver.protocol.command - Sending command '{"find": "Beer", "filter": {"name": "Pumking"}, "$db": "beersdb", "lsid": {"id": {"$binary": {"base64": "qcT7pBFNSbmtIclQ/hr6DQ==", "subType": "04"}}}}' with request id 11 to database beersdb on connection [connectionId{localValue:3, serverValue:14}] to server localhost:27017
+18:06:47.441 [org.redlich.beers.BeerApp.main()] DEBUG org.mongodb.driver.protocol.command - Execution of command with request id 11 completed successfully in 1.17 ms on connection [connectionId{localValue:3, serverValue:14}] to server localhost:27017
+18:06:47.442 [org.redlich.beers.BeerApp.main()] DEBUG org.mongodb.driver.operation - Received batch of 1 documents with cursorId 0 from server localhost:27017
+Beer { id = '1', name = 'Pumking', type = 'ALE', brewer_id = '1', abv = '8.6' }
+
+
+* Let's find brewers by city and state, say, New Orleans, Louisiana:
+18:06:47.447 [org.redlich.beers.BeerApp.main()] DEBUG org.mongodb.driver.protocol.command - Sending command '{"find": "Brewer", "filter": {"$and": [{"city": "New Orleans"}, {"state": "Louisiana"}]}, "$db": "beersdb", "lsid": {"id": {"$binary": {"base64": "qcT7pBFNSbmtIclQ/hr6DQ==", "subType": "04"}}}}' with request id 12 to database beersdb on connection [connectionId{localValue:3, serverValue:14}] to server localhost:27017
+18:06:47.448 [org.redlich.beers.BeerApp.main()] DEBUG org.mongodb.driver.protocol.command - Execution of command with request id 12 completed successfully in 1.20 ms on connection [connectionId{localValue:3, serverValue:14}] to server localhost:27017
+18:06:47.448 [org.redlich.beers.BeerApp.main()] DEBUG org.mongodb.driver.operation - Received batch of 6 documents with cursorId 0 from server localhost:27017
+Brewer { id = '15', name = 'Urban South Brewing', city = 'New Orleans', state = 'Louisiana' }
+
+Brewer { id = '17', name = 'NOLA Brewing', city = 'New Orleans', state = 'Louisiana' }
+
+Brewer { id = '20', name = 'The Courtyard Brewery', city = 'New Orleans', state = 'Louisiana' }
+
+Brewer { id = '21', name = 'Miel Brewery & Taproom', city = 'New Orleans', state = 'Louisiana' }
+
+Brewer { id = '24', name = 'Port Orleans', city = 'New Orleans', state = 'Louisiana' }
+
+Brewer { id = '26', name = 'Second Line Brewing', city = 'New Orleans', state = 'Louisiana' }
+
+
+* Let's find beers by ABV that greater than 8.0%:
+18:06:47.452 [org.redlich.beers.BeerApp.main()] DEBUG org.mongodb.driver.protocol.command - Sending command '{"find": "Beer", "filter": {"abv": {"$gt": 8.0}}, "$db": "beersdb", "lsid": {"id": {"$binary": {"base64": "qcT7pBFNSbmtIclQ/hr6DQ==", "subType": "04"}}}}' with request id 13 to database beersdb on connection [connectionId{localValue:3, serverValue:14}] to server localhost:27017
+18:06:47.453 [org.redlich.beers.BeerApp.main()] DEBUG org.mongodb.driver.protocol.command - Execution of command with request id 13 completed successfully in 1.25 ms on connection [connectionId{localValue:3, serverValue:14}] to server localhost:27017
+18:06:47.454 [org.redlich.beers.BeerApp.main()] DEBUG org.mongodb.driver.operation - Received batch of 8 documents with cursorId 0 from server localhost:27017
+Beer { id = '1', name = 'Pumking', type = 'ALE', brewer_id = '1', abv = '8.6' }
+
+Beer { id = '4', name = 'Warlock Imperial Stout', type = 'STOUT', brewer_id = '1', abv = '8.6' }
+
+Beer { id = '11', name = 'Ziko's Rage', type = 'STOUT', brewer_id = '19', abv = '8.2' }
+
+Beer { id = '19', name = 'Brandy Barrel-Aged Pumpkin Imperial Ale', type = 'ALE', brewer_id = '27', abv = '13.4' }
+
+Beer { id = '23', name = 'Tank 7', type = 'ALE', brewer_id = '30', abv = '8.5' }
+
+Beer { id = '24', name = 'The Calling IPA', type = 'IPA', brewer_id = '30', abv = '8.5' }
+
+Beer { id = '25', name = 'Bourbon Barrel Quad', type = 'ALE', brewer_id = '30', abv = '12.2' }
+
+Beer { id = '26', name = 'Whiskey Barrel Stout', type = 'STOUT', brewer_id = '30', abv = '11.8' }
+
+
+* Let's find brewers from Flemington, New Jersey:
+18:06:47.458 [org.redlich.beers.BeerApp.main()] DEBUG org.mongodb.driver.protocol.command - Sending command '{"find": "Brewer", "filter": {"$and": [{"city": "Flemington"}, {"state": "New Jersey"}]}, "$db": "beersdb", "lsid": {"id": {"$binary": {"base64": "qcT7pBFNSbmtIclQ/hr6DQ==", "subType": "04"}}}}' with request id 14 to database beersdb on connection [connectionId{localValue:3, serverValue:14}] to server localhost:27017
+18:06:47.459 [org.redlich.beers.BeerApp.main()] DEBUG org.mongodb.driver.protocol.command - Execution of command with request id 14 completed successfully in 1.14 ms on connection [connectionId{localValue:3, serverValue:14}] to server localhost:27017
+18:06:47.459 [org.redlich.beers.BeerApp.main()] DEBUG org.mongodb.driver.operation - Received batch of 2 documents with cursorId 0 from server localhost:27017
+Brewer { id = '5', name = 'Lone Eagle Brewing', city = 'Flemington', state = 'New Jersey' }
+
+Brewer { id = '13', name = 'Conclave Brewing', city = 'Flemington', state = 'New Jersey' }
+
+
+* Let's find the second beer in the `Beer` collection and the fourth brewer from the `Brewer` collection:
+18:06:47.462 [org.redlich.beers.BeerApp.main()] DEBUG org.mongodb.driver.protocol.command - Sending command '{"find": "Beer", "filter": {"_id": 2}, "$db": "beersdb", "lsid": {"id": {"$binary": {"base64": "qcT7pBFNSbmtIclQ/hr6DQ==", "subType": "04"}}}}' with request id 15 to database beersdb on connection [connectionId{localValue:3, serverValue:14}] to server localhost:27017
+18:06:47.463 [org.redlich.beers.BeerApp.main()] DEBUG org.mongodb.driver.protocol.command - Execution of command with request id 15 completed successfully in 1.05 ms on connection [connectionId{localValue:3, serverValue:14}] to server localhost:27017
+18:06:47.463 [org.redlich.beers.BeerApp.main()] DEBUG org.mongodb.driver.operation - Received batch of 1 documents with cursorId 0 from server localhost:27017
+Optional[Beer { id = '2', name = 'Liquid Truth Serum IPA', type = 'IPA', brewer_id = '2', abv = '7.0' }
+]
+18:06:47.468 [org.redlich.beers.BeerApp.main()] DEBUG org.mongodb.driver.protocol.command - Sending command '{"find": "Brewer", "filter": {"_id": 4}, "$db": "beersdb", "lsid": {"id": {"$binary": {"base64": "qcT7pBFNSbmtIclQ/hr6DQ==", "subType": "04"}}}}' with request id 16 to database beersdb on connection [connectionId{localValue:3, serverValue:14}] to server localhost:27017
+18:06:47.469 [org.redlich.beers.BeerApp.main()] DEBUG org.mongodb.driver.protocol.command - Execution of command with request id 16 completed successfully in 1.02 ms on connection [connectionId{localValue:3, serverValue:14}] to server localhost:27017
+18:06:47.470 [org.redlich.beers.BeerApp.main()] DEBUG org.mongodb.driver.operation - Received batch of 1 documents with cursorId 0 from server localhost:27017
+Optional[Brewer { id = '4', name = 'Victory', city = 'Downington', state = 'Pennsylvania' }
+]
+
+18:06:47.473 [org.redlich.beers.BeerApp.main()] INFO org.jboss.weld.Bootstrap - WELD-ENV-002001: Weld SE container b4ed876f-0934-4021-8fb7-88afff215db3 shut down
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  3.717 s
+[INFO] Finished at: 2023-01-03T18:06:47-05:00
+[INFO] ------------------------------------------------------------------------
