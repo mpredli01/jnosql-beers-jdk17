@@ -27,11 +27,12 @@
         <maven.compiler.target>17</maven.compiler.target>
         <maven.compile.version>3.8.1</maven.compile.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <jakarta.nosql.version>1.0.0-b6</jakarta.nosql.version>
+        <jakarta.data.version>1.0.0-b1</jakarta.data.version>
+        <jakarta.nosql.version>1.0.0-b6-SNAPSHOT</jakarta.nosql.version>
         <microprofile.config.version>3.0.2</microprofile.config.version>
-        <smallrye.config.version>2.12.1</smallrye.config.version>
+        <smallrye.config.version>3.1.1</smallrye.config.version>
         <yasson.version>1.0.11</yasson.version>
-        <jboss.weld.se.version>3.1.9.Final</jboss.weld.se.version>
+        <jboss.weld.se.version>5.1.0.Final</jboss.weld.se.version>
         <openliberty.maven.version>3.3.4</openliberty.maven.version>
         <failOnMissingWebXml>false</failOnMissingWebXml>
         <final.name>jnosql-beers</final.name>
@@ -53,18 +54,18 @@
         <dependency>
             <groupId>jakarta.data</groupId>
             <artifactId>jakarta-data-api</artifactId>
-            <version>1.0.0-b1</version>
+            <version>${jakarta.data.version}</version>
         </dependency>
         <dependency>
             <groupId>org.eclipse.jnosql.mapping</groupId>
             <artifactId>jnosql-mapping-document</artifactId>
             <version>${jakarta.nosql.version}</version>
         </dependency>
-        <dependency>
+        <!-- <dependency>
             <groupId>org.eclipse.jnosql.communication</groupId>
             <artifactId>jnosql-mongodb-driver</artifactId>
             <version>${jakarta.nosql.version}</version>
-        </dependency>
+        </dependency> -->
         <dependency>
             <groupId>org.jboss.weld.se</groupId>
             <artifactId>weld-se-core</artifactId>

@@ -10,17 +10,27 @@
 
 package org.redlich.beers;
 
+import jakarta.data.repository.CrudRepository;
+import jakarta.data.repository.Param;
+import jakarta.data.repository.Query;
 import jakarta.data.repository.Repository;
 
-import javax.enterprise.context.ApplicationScoped;
+import java.util.List;
+
+import jakarta.enterprise.context.ApplicationScoped;
 import java.util.stream.Stream;
 
-@ApplicationScoped
-public interface BeerRepository extends Repository<Beer, Integer> {
+@Repository
+public interface BeerRepository extends CrudRepository<Beer, Integer> {
 
+    @Query("select * from Beer where name = @name")
+    List<Beer> query(@Param("name") String name);
+
+    /*/
     Stream<Beer> findAll();
 
     Stream<Beer> findByName(String beer);
 
     Stream<Beer> findByBrewerId(int brewer_id);
+    /*/
     }

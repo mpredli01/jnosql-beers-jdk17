@@ -11,12 +11,14 @@
 package org.redlich.beers;
 
 // import jakarta.nosql.document.DocumentQuery;
+import jakarta.nosql.Template;
 import jakarta.nosql.document.DocumentTemplate;
 
-import javax.enterprise.inject.se.SeContainer;
-import javax.enterprise.inject.se.SeContainerInitializer;
+import jakarta.enterprise.inject.se.SeContainer;
+import jakarta.enterprise.inject.se.SeContainerInitializer;
 
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Stream;
 
 /*/
@@ -38,10 +40,20 @@ public class BeerApp {
 
         try (SeContainer container = SeContainerInitializer.newInstance().initialize()) {
 
-            Service service = container.select(Service.class).get();
+            // Service service = container.select(Service.class).get();
 
+            // DocumentTemplate template = container.select(DocumentTemplate.class).get();
+            BeerRepository repository = container.select(BeerRepository.class).get();
+            var beers = repository.query("Pumking");
+            System.out.println("The effective books: " + beers);
+
+
+            // Optional<Beer> person = template.find(Beer.class, "otaviojava");
+
+            /*/
             BeerRepository beerRepository = service.getBeerRepository();
             BrewerRepository brewerRepository = service.getBrewerRepository();
+
 
             BeerService beerService = container.select(BeerService.class).get();
             BrewerService brewerService = container.select(BrewerService.class).get();
@@ -54,10 +66,10 @@ public class BeerApp {
             System.out.println();
 
             Stream<Beer> beerList = beerRepository.findAll();
-            List<Brewer> brewerList = brewerRepository.findAll();
+            Stream<Brewer> brewerList = brewerRepository.findAll();
 
             long noOfBeers = beerList.count();
-            int noOfBrewers = brewerList.size();
+            long noOfBrewers = brewerList.count();
 
             System.out.println("\n");
             System.out.println("* First, let's get some current statistics on the `Beer` and `Brewer` collections:");
@@ -65,20 +77,20 @@ public class BeerApp {
             System.out.println("There are " + noOfBrewers + " brewers in the `Brewer` collection of the database" + "\n");
 
             Brewer brewer01 = Brewer.builder()
-                    .id(noOfBrewers + 1)
+                    .id((int)noOfBrewers + 1)
                     .name("Narragansett Brewing")
                     .city("Providence")
                     .state("Rhode Island")
                     .build();
-            // brewerRepository.save(brewer01);
+            brewerRepository.save(brewer01);
 
             Brewer brewer02 = Brewer.builder()
-                    .id(noOfBrewers + 2)
+                    .id((int)noOfBrewers + 2)
                     .name("Apponaug Brewing")
                     .city("Warwick")
                     .state("Rhode Island")
                     .build();
-            // brewerService.insert(brewer02);
+            brewerService.insert(brewer02);
 
             System.out.println("* Let's find a specific brewer by name, say, Apponaug Brewing:");
             List<Brewer> brewers = brewerRepository.findByName("Apponaug Brewing");
@@ -99,7 +111,7 @@ public class BeerApp {
                     .brewer_id(brewer_id)
                     .abv(8.0)
                     .build();
-            // beerRepository.save(beer01);
+            beerRepository.save(beer01);
 
             Beer beer02 = Beer.builder()
                     .id((int) noOfBeers + 2)
@@ -108,7 +120,7 @@ public class BeerApp {
                     .brewer_id(brewer_id)
                     .abv(5.5)
                     .build();
-            // beerService.insert(beer02);
+            beerService.insert(beer02);
 
             System.out.println("* Let's find varieties of beer by " + brewerName + " using its `brewerId` (" + brewer_id + "):");
             Stream<Beer> byBrewerId = beerRepository.findByBrewerId(brewer_id);
@@ -129,10 +141,6 @@ public class BeerApp {
             Stream<Beer> beerStream = beerService.findByAbv(8.0);
             beerStream.forEach(beered -> System.out.println(beered));
             System.out.println();
-
-            /*/ work in progress for updating a beer or a brewer
-            System.out.println("The brewerId still remains as: " + brewer_id);
-            brewerRepository.update(alchemist);
             /*/
 
             /*/ uncomment this section to delete a beer from the database
@@ -145,8 +153,8 @@ public class BeerApp {
             brewerRepository.deleteById(28);
             /*/
 
-            System.out.println("* Let's find brewers from Flemington, New Jersey:");
             /*/
+            System.out.println("* Let's find brewers from Flemington, New Jersey:");
             DocumentQuery query = select() // from b5
                     .from("Brewer")
                     .where("city")
@@ -155,16 +163,18 @@ public class BeerApp {
                     .eq("New Jersey")
                     .build();
 
-             /*/
             DocumentTemplate template = container.select(DocumentTemplate.class).get();
             Stream<Brewer> brewerStream2 = template.select(Brewer.class).where("city").eq("Flemington").and("state").eq("New Jersey");
             brewerStream2.forEach(brewered -> System.out.println(brewered));
             System.out.println();
 
+            DocumentTemplate template = container.select(DocumentTemplate.class).get();
             System.out.println("* Let's find the second beer in the `Beer` collection and the fourth brewer from the `Brewer` collection:");
             System.out.println(template.find(Beer.class, 2));
             System.out.println(template.find(Brewer.class, 4));
             System.out.println();
+
+            /*/
             }
         catch(IndexOutOfBoundsException exception) {
             System.out.println("EXCEPTION:");

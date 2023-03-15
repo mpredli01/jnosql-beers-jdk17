@@ -10,17 +10,17 @@
 
 package org.redlich.beers;
 
+import jakarta.data.repository.CrudRepository;
 import jakarta.data.repository.Repository;
-
-import javax.enterprise.context.ApplicationScoped;
+// import jakarta.enterprise.context.ApplicationScoped;
 
 import java.util.List;
+import java.util.stream.Stream;
 
+@Repository
+public interface BrewerRepository extends CrudRepository<Brewer, String> {
 
-@ApplicationScoped
-public interface BrewerRepository extends Repository<Brewer, String> {
-
-    List<Brewer> findAll();
+    Stream<Brewer> findAll();
 
     List<Brewer> findByName(String brewer);
 
