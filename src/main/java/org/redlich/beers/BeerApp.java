@@ -50,7 +50,7 @@ public class BeerApp {
                     .city("Freeport")
                     .state("Maine")
                     .build();
-            // brewerRepository.save(brewer01);
+            brewerRepository.save(brewer01);
 
             Brewer brewer02 = Brewer.builder()
                     .id((int)noOfBrewers + 2)
@@ -58,10 +58,10 @@ public class BeerApp {
                     .city("Vero Beach")
                     .state("Florida")
                     .build();
-            // brewerRepository.save(brewer02);
+            brewerRepository.save(brewer02);
 
             System.out.println("* Let's find a specific brewer by name, say, American Icon Brewery:");
-            List<Brewer> brewerList = brewerRepository.findByName("Highrail");
+            List<Brewer> brewerList = brewerRepository.findByName("American Icon Brewery");
             int brewer_id = brewerList.get(0).getId();
             String brewerName = brewerList.get(0).getName();
             System.out.println(brewerList);
@@ -79,7 +79,7 @@ public class BeerApp {
                     .brewer_id(brewer_id)
                     .abv(6.0)
                     .build();
-            // beerRepository.save(beer01);
+            beerRepository.save(beer01);
 
             Beer beer02 = Beer.builder()
                     .id((int) noOfBeers + 2)
@@ -88,7 +88,7 @@ public class BeerApp {
                     .brewer_id(brewer_id)
                     .abv(5.4)
                     .build();
-            // beerRepository.save(beer02);
+            beerRepository.save(beer02);
 
             System.out.println("* Let's find varieties of beer by " + brewerName + " using its `brewerId` (" + brewer_id + "):");
             Stream<Beer> byBrewerId = beerRepository.findByBrewerId(brewer_id);
