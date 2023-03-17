@@ -37,7 +37,7 @@
         <failOnMissingWebXml>false</failOnMissingWebXml>
         <final.name>jnosql-beers</final.name>
     </properties>
-    
+
     <repositories>
         <repository>
             <id>central</id>
@@ -61,11 +61,11 @@
             <artifactId>jnosql-mapping-document</artifactId>
             <version>${jakarta.nosql.version}</version>
         </dependency>
-        <!-- <dependency>
+        <dependency>
             <groupId>org.eclipse.jnosql.communication</groupId>
             <artifactId>jnosql-mongodb-driver</artifactId>
             <version>${jakarta.nosql.version}</version>
-        </dependency> -->
+        </dependency>
         <dependency>
             <groupId>org.jboss.weld.se</groupId>
             <artifactId>weld-se-core</artifactId>
@@ -81,11 +81,6 @@
             <artifactId>smallrye-config</artifactId>
             <version>${smallrye.config.version}</version>
         </dependency>
-<!--        <dependency> -->
-<!--            <groupId>ch.qos.logback</groupId> -->
-<!--            <artifactId>logback-classic</artifactId> -->
-<!--            <version>1.4.5</version> -->
-<!--        </dependency> -->
     </dependencies>
     <build>
         <finalName>jnosql-beers</finalName>

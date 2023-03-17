@@ -26,11 +26,11 @@ public interface BeerRepository extends CrudRepository<Beer, Integer> {
     @Query("select * from Beer where name = @name")
     List<Beer> query(@Param("name") String name);
 
-    /*/
     Stream<Beer> findAll();
 
     Stream<Beer> findByName(String beer);
 
     Stream<Beer> findByBrewerId(int brewer_id);
-    /*/
-    }
+
+    Stream<Beer> findByAbv(double abv);
+}
