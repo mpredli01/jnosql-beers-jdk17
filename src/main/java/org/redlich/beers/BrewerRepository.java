@@ -27,4 +27,6 @@ public interface BrewerRepository extends CrudRepository<Brewer, String> {
     void deleteById(int id);
 
     void update(Brewer brewer);
-    }
+
+    Stream<Brewer> findByCityAndState(String city, String state);
+}
