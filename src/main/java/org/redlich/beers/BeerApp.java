@@ -32,8 +32,6 @@ public class BeerApp {
             System.out.println("The effective books: " + beers);
 
 
-            Optional<Beer> person = template.find(Beer.class, "otaviojava");
-
             BeerRepository beerRepository = container.select(BeerRepository.class).get();
             BrewerRepository brewerRepository = container.select(BrewerRepository.class).get();
 
