@@ -10,7 +10,6 @@
 
 package org.redlich.beers;
 
-// import jakarta.nosql.document.DocumentQuery;
 import jakarta.nosql.Template;
 import jakarta.nosql.document.DocumentTemplate;
 
@@ -21,26 +20,11 @@ import java.util.List;
 import java.util.Optional;
 import java.util.stream.Stream;
 
-/*/
-import java.util.logging.Logger;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-/*/
-
-// import static jakarta.nosql.document.DocumentQuery.select;
-
 public class BeerApp {
-
-    /*/
-    private static final Logger LOGGER = Logger.getLogger(BeerApp.class.getName());
-    final static Logger logger = LoggerFactory.getLogger(BeerApp.class);
-    /*/
 
     public static void main(String[] args) {
 
         try (SeContainer container = SeContainerInitializer.newInstance().initialize()) {
-
-
 
             // var pumking = beerRepository.query("Pumking");
 
@@ -64,15 +48,6 @@ public class BeerApp {
             long noOfBeers = beerRepository.count();
             long noOfBrewers = brewerRepository.count();
 
-
-            /*/
-            Stream<Beer> beerList = beerRepository.findAll();
-            Stream<Brewer> brewerList = brewerRepository.findAll();
-
-            long noOfBeers = beerList.count();
-            long noOfBrewers = brewerList.count();
-            /*/
-
             System.out.println("\n");
             System.out.println("* First, let's get some current statistics on the `Beer` and `Brewer` collections:");
             System.out.println("There are " + noOfBeers + " beers in the `Beer` collection of the database");
@@ -84,7 +59,7 @@ public class BeerApp {
                     .city("Providence")
                     .state("Rhode Island")
                     .build();
-            // brewerRepository.save(brewer01);
+            brewerRepository.save(brewer01);
 
             Brewer brewer02 = Brewer.builder()
                     .id((int)noOfBrewers + 2)
@@ -92,17 +67,17 @@ public class BeerApp {
                     .city("Warwick")
                     .state("Rhode Island")
                     .build();
-            // brewerService.insert(brewer02);
+            brewerRepository.save(brewer02);
 
             System.out.println("* Let's find a specific brewer by name, say, Apponaug Brewing:");
-            // List<Brewer> brewers = brewerRepository.findByName("Apponaug Brewing");
-            // int brewer_id = brewers.get(0).getId();
-            // String brewerName = brewers.get(0).getName();
+            List<Brewer> brewerList = brewerRepository.findByName("Apponaug Brewing");
+            int brewer_id = brewerList.get(0).getId();
+            String brewerName = brewerList.get(0).getName();
             System.out.println(brewers);
             System.out.println();
 
-            // System.out.println("* Let's obtain the `brewerId` of " + brewerName + ":");
-            // System.out.println("The `brewerId` of " + brewerName + " is " + brewer_id);
+            System.out.println("* Let's obtain the `brewerId` of " + brewerName + ":");
+            System.out.println("The `brewerId` of " + brewerName + " is " + brewer_id);
             System.out.println();
 
             // System.out.println("* Let's add two new beers from " + brewerName + " using its `brewerId` (" + brewer_id + "):\n");
