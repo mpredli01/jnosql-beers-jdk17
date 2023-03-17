@@ -16,19 +16,24 @@ import jakarta.data.repository.Query;
 import jakarta.data.repository.Repository;
 
 import java.util.List;
-
-import jakarta.enterprise.context.ApplicationScoped;
 import java.util.stream.Stream;
 
 @Repository
 public interface BeerRepository extends CrudRepository<Beer, Integer> {
 
-    Stream<Beer> findAll();
-
     @Query("select * from Beer where name = @name")
     List<Beer> query(@Param("name") String name);
 
+    Stream<Beer> findAll();
+
     Stream<Beer> findByName(String beer);
 
+    List<Beer> findByAbv(double abv);
+
     Stream<Beer> findByBrewerId(int brewer_id);
-    }
+
+    void deleteById(int id);
+
+    void update(Brewer brewer);
+
+}

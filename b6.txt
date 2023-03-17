@@ -1,0 +1,85 @@
+[INFO] Scanning for projects...
+[WARNING] The POM for org.eclipse.m2e-only:lifecycle-mapping:jar:1.0.0 is missing, no dependency information available
+[WARNING] Failed to retrieve plugin descriptor for org.eclipse.m2e-only:lifecycle-mapping:1.0.0: Plugin org.eclipse.m2e-only:lifecycle-mapping:1.0.0 or one of its dependencies could not be resolved: org.eclipse.m2e-only:lifecycle-mapping:jar:1.0.0 was not found in https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced
+[INFO] 
+[INFO] -------------------------< org.redlich:beers >--------------------------
+[INFO] Building Example Application using Jakarta NoSQL and MongoDB 1.0.5
+[INFO] --------------------------------[ jar ]---------------------------------
+[WARNING] The POM for org.eclipse.m2e-only:lifecycle-mapping:jar:1.0.0 is missing, no dependency information available
+[WARNING] Failed to retrieve plugin descriptor for org.eclipse.m2e-only:lifecycle-mapping:1.0.0: Plugin org.eclipse.m2e-only:lifecycle-mapping:1.0.0 or one of its dependencies could not be resolved: org.eclipse.m2e-only:lifecycle-mapping:jar:1.0.0 was not found in https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced
+[INFO] 
+[INFO] >>> exec-maven-plugin:1.2.1:java (default-cli) > validate @ beers >>>
+[INFO] 
+[INFO] <<< exec-maven-plugin:1.2.1:java (default-cli) < validate @ beers <<<
+[INFO] 
+[INFO] 
+[INFO] --- exec-maven-plugin:1.2.1:java (default-cli) @ beers ---
+
+*-----------------------------------------------------------------------------*
+* Craft Beer Database Application                                             *
+* A demonstration on how to create a Jakarta NoSQL and MongoDB application    *
+*-----------------------------------------------------------------------------*
+
+
+
+* First, let's get some current statistics on the `Beer` and `Brewer` collections:
+There are 28 beers in the `Beer` collection of the database
+There are 32 brewers in the `Brewer` collection of the database
+
+* Let's find a specific brewer by name, say, American Icon Brewery:
+[Brewer { id = '28', name = 'Highrail', city = 'High Bridge', state = 'New Jersey' }
+]
+
+* Let's obtain the `brewerId` of Highrail:
+The `brewerId` of Highrail is 28
+
+* Let's add two new beers from Highrail using its `brewerId` (28):
+
+* Let's find varieties of beer by Highrail using its `brewerId` (28):
+
+* Let's find a specific beer by name, say, Pumking:
+Beer { id = '1', name = 'Pumking', type = 'ALE', brewer_id = '1', abv = '8.6' }
+
+
+* Let's find brewers by city and state, say, New Orleans, Louisiana:
+Brewer { id = '15', name = 'Urban South Brewing', city = 'New Orleans', state = 'Louisiana' }
+
+Brewer { id = '17', name = 'NOLA Brewing', city = 'New Orleans', state = 'Louisiana' }
+
+Brewer { id = '20', name = 'The Courtyard Brewery', city = 'New Orleans', state = 'Louisiana' }
+
+Brewer { id = '21', name = 'Miel Brewery & Taproom', city = 'New Orleans', state = 'Louisiana' }
+
+Brewer { id = '24', name = 'Port Orleans', city = 'New Orleans', state = 'Louisiana' }
+
+Brewer { id = '26', name = 'Second Line Brewing', city = 'New Orleans', state = 'Louisiana' }
+
+
+* Let's find beers by ABV greater than 8.0%:
+Beer { id = '13', name = 'Monstera', type = 'IPA', brewer_id = '21', abv = '8.0' }
+
+Beer { id = '21', name = 'Heady Topper', type = 'IPA', brewer_id = '16', abv = '8.0' }
+
+Beer { id = '27', name = 'Convection', type = 'IPA', brewer_id = '32', abv = '8.0' }
+
+
+* Let's find another beer by name using using the query() method:
+Beer { id = '5', name = 'Purple Monkey Dishwasher', type = 'PORTER', brewer_id = '11', abv = '6.7' }
+
+* Let's find brewers from Flemington, New Jersey:
+Brewer { id = '5', name = 'Lone Eagle Brewing', city = 'Flemington', state = 'New Jersey' }
+
+Brewer { id = '13', name = 'Conclave Brewing', city = 'Flemington', state = 'New Jersey' }
+
+* Let's find the second beer in the `Beer` collection and the fourth brewer from the `Brewer` collection:
+Optional[Beer { id = '2', name = 'Liquid Truth Serum IPA', type = 'IPA', brewer_id = '2', abv = '7.0' }
+]
+Optional[Brewer { id = '4', name = 'Victory', city = 'Downington', state = 'Pennsylvania' }
+]
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  4.278 s
+[INFO] Finished at: 2023-03-17T14:25:55-04:00
+[INFO] ------------------------------------------------------------------------

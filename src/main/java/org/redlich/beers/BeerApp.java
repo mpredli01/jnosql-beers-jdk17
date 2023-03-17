@@ -10,14 +10,12 @@
 
 package org.redlich.beers;
 
-import jakarta.nosql.Template;
 import jakarta.nosql.document.DocumentTemplate;
 
 import jakarta.enterprise.inject.se.SeContainer;
 import jakarta.enterprise.inject.se.SeContainerInitializer;
 
 import java.util.List;
-import java.util.Optional;
 import java.util.stream.Stream;
 
 public class BeerApp {
@@ -25,13 +23,6 @@ public class BeerApp {
     public static void main(String[] args) {
 
         try (SeContainer container = SeContainerInitializer.newInstance().initialize()) {
-
-            // var pumking = beerRepository.query("Pumking");
-
-            // beers.forEach(beer -> System.out.println(beer));
-
-            // brewers.forEach(brewer -> System.out.println(brewer));
-
             System.out.println();
             System.out.println("*-----------------------------------------------------------------------------*");
             System.out.println("* Craft Beer Database Application                                             *");
@@ -55,68 +46,68 @@ public class BeerApp {
 
             Brewer brewer01 = Brewer.builder()
                     .id((int)noOfBrewers + 1)
-                    .name("Narragansett Brewing")
-                    .city("Providence")
-                    .state("Rhode Island")
+                    .name("Maine Beer Company")
+                    .city("Freeport")
+                    .state("Maine")
                     .build();
-            brewerRepository.save(brewer01);
+            // brewerRepository.save(brewer01);
 
             Brewer brewer02 = Brewer.builder()
                     .id((int)noOfBrewers + 2)
-                    .name("Apponaug Brewing")
-                    .city("Warwick")
-                    .state("Rhode Island")
+                    .name("American Icon Brewery")
+                    .city("Vero Beach")
+                    .state("Florida")
                     .build();
-            brewerRepository.save(brewer02);
+            // brewerRepository.save(brewer02);
 
-            System.out.println("* Let's find a specific brewer by name, say, Apponaug Brewing:");
-            List<Brewer> brewerList = brewerRepository.findByName("Apponaug Brewing");
+            System.out.println("* Let's find a specific brewer by name, say, American Icon Brewery:");
+            List<Brewer> brewerList = brewerRepository.findByName("Highrail");
             int brewer_id = brewerList.get(0).getId();
             String brewerName = brewerList.get(0).getName();
-            System.out.println(brewers);
+            System.out.println(brewerList);
             System.out.println();
 
             System.out.println("* Let's obtain the `brewerId` of " + brewerName + ":");
             System.out.println("The `brewerId` of " + brewerName + " is " + brewer_id);
             System.out.println();
 
-            // System.out.println("* Let's add two new beers from " + brewerName + " using its `brewerId` (" + brewer_id + "):\n");
+            System.out.println("* Let's add two new beers from " + brewerName + " using its `brewerId` (" + brewer_id + "):\n");
             Beer beer01 = Beer.builder()
                     .id((int) noOfBeers + 1)
-                    .name("Convection")
-                    .type(BeerType.IPA)
-                    // .brewer_id(brewer_id)
-                    .abv(8.0)
+                    .name("Freedom Torch Milk Stout")
+                    .type(BeerType.STOUT)
+                    .brewer_id(brewer_id)
+                    .abv(6.0)
                     .build();
             // beerRepository.save(beer01);
 
             Beer beer02 = Beer.builder()
                     .id((int) noOfBeers + 2)
-                    .name("Busy Beaver")
-                    .type(BeerType.ALE)
-                    // .brewer_id(brewer_id)
-                    .abv(5.5)
+                    .name("Power Plant Amber Lager")
+                    .type(BeerType.LAGER)
+                    .brewer_id(brewer_id)
+                    .abv(5.4)
                     .build();
-            // beerService.insert(beer02);
+            // beerRepository.save(beer02);
 
-            // System.out.println("* Let's find varieties of beer by " + brewerName + " using its `brewerId` (" + brewer_id + "):");
-            // Stream<Beer> byBrewerId = beerRepository.findByBrewerId(brewer_id);
-            // byBrewerId.forEach(beerByBrewer -> System.out.println(beerByBrewer));
+            System.out.println("* Let's find varieties of beer by " + brewerName + " using its `brewerId` (" + brewer_id + "):");
+            Stream<Beer> byBrewerId = beerRepository.findByBrewerId(brewer_id);
+            byBrewerId.forEach(beerByBrewer -> System.out.println(beerByBrewer));
             System.out.println();
 
             System.out.println("* Let's find a specific beer by name, say, Pumking:");
-            // Stream<Beer> beerStream1 = beerRepository.findByName("Pumking");
-            // beerStream1.forEach(beer -> System.out.println(beer));
+            Stream<Beer> beerStream1 = beerRepository.findByName("Pumking");
+            beerStream1.forEach(beer -> System.out.println(beer));
             System.out.println();
 
             System.out.println("* Let's find brewers by city and state, say, New Orleans, Louisiana:");
-            // Stream<Brewer> brewerStream = brewerService.findByCityAndState("New Orleans", "Louisiana");
-            // brewerStream.forEach(brewer -> System.out.println(brewer));
+            List<Brewer> brewerStream = brewerRepository.findByCityAndState("New Orleans", "Louisiana");
+            brewerStream.forEach(brewer -> System.out.println(brewer));
             System.out.println();
 
             System.out.println("* Let's find beers by ABV greater than 8.0%:");
-            // Stream<Beer> beerStream = beerService.findByAbv(8.0);
-            // beerStream.forEach(beered -> System.out.println(beered));
+            List<Beer> beerStream = beerRepository.findByAbv(8.0);
+            beerStream.forEach(beered -> System.out.println(beered));
             System.out.println();
 
             /*/ uncomment this section to delete a beer from the database
@@ -126,24 +117,16 @@ public class BeerApp {
 
             /*/ uncomment this section to delete a brewer from the database
             System.out.println("Deleting brewer by brewer_id");
-            brewerRepository.deleteById(28);
+            brewerRepository.deleteById(34);
             /*/
 
-            /*/
+            System.out.println("* Let's find another beer by name using using the query() method:");
+            var beerByName = beerRepository.query("Purple Monkey Dishwasher");
+            beerByName.forEach(purple -> System.out.println(purple));
+
             System.out.println("* Let's find brewers from Flemington, New Jersey:");
-            DocumentQuery query = select() // from b5
-                    .from("Brewer")
-                    .where("city")
-                    .eq("Flemington")
-                    .and("state")
-                    .eq("New Jersey")
-                    .build();
-
-            DocumentTemplate template = container.select(DocumentTemplate.class).get();
-            Stream<Brewer> brewerStream2 = template.select(Brewer.class).where("city").eq("Flemington").and("state").eq("New Jersey");
-            brewerStream2.forEach(brewered -> System.out.println(brewered));
-            System.out.println();
-            /*/
+            var brewerByCity = brewerRepository.query("Flemington");
+            brewerByCity.forEach(flemington -> System.out.println(flemington));
 
             DocumentTemplate template = container.select(DocumentTemplate.class).get();
             System.out.println("* Let's find the second beer in the `Beer` collection and the fourth brewer from the `Brewer` collection:");
